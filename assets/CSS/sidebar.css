@@ -4,4 +4,64 @@
     width: 240px;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
+
+    z-index: 1000 ;
+
+    font-size: 1.5rem;
+
+    color: white;
 }
+
+.sidebar .sidebar-app-name{
+    height: 50px;
+    background-color: brown;
+    line-height: 50px;
+    display: flex;
+}
+
+.sidebar .sidebar-app-name img{
+    max-width: 100%;
+ }
+
+
+ .sidebar .sidebar-app-name .img-large-layout {
+     display: block;
+ }
+ .sidebar .sidebar-app-name .img-small-layout {
+    display: none;
+}
+
+ 
+/*media query*/
+    /*tablet*/
+    @media (max-width : 992px){
+        .sidebar{
+            width: 60px ;
+            background-color: rgb(42, 65, 104,0.8) ;
+        }
+
+        
+ .sidebar .sidebar-app-name .img-large-layout {
+    display: none;
+}
+.sidebar .sidebar-app-name .img-small-layout {
+   display: block;
+}
+    }
+
+    /*small*/
+    @media (max-width : 600px ){
+        .sidebar{
+             display: none; 
+             width: 240px ;
+        }
+
+        .sidebar .sidebar-app-name .img-large-layout {
+            display: block;
+        }
+        .sidebar .sidebar-app-name .img-small-layout {
+           display: none;
+       }
+
+
+    }

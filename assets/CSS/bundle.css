@@ -2,3 +2,7 @@
 /*Component*/
 @import 'sidebar.css';
 @import 'content.css';
+@import 'banner.css';
+@import 'utillities.css';
+
+@import 'btn-global' ;
